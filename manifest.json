@@ -1,0 +1,20 @@
+﻿{
+  "name": "Chặn Request",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Etension có tác dụng chặn reqest các trang không mong muốn",
+  "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules_1.json"
+    }]
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
